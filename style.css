@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* navbar */
+#navbar{
+    display: flex;
+    align-items:center;
+    position: absolute;
+    top: 0px;
+opacity: 0.8;
+}
+#navbar:before{
+    content: "";
+    background-color: black;
+   position: absolute ;
+   height: 100%;
+   width:100%;
+   top:0px;
+   left:0px;
+   z-index: -1;
+   opacity: 0.4;
+}
+
+/*navbar logo&image */
+#logo{
+    margin:10px 30px;
+    height:60px;
+
+}
+#logo img{
+margin:-9px 6px;
+}
+
+/* navbar listing style */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li{
+list-style: none;
+font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding:5px 20px ;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 518px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('bg4.jpg') no-repeat center center/cover;
+   position:absolute ; 
+   height:100%;
+   width:100%;
+   top:0px;
+   left:0px;
+   z-index: -1;
+   opacity: 1;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* services section */
+#services{
+margin:0px;
+display: flex;
+background:url('spacebgg.jpg');
+}
+    
+#services .box{
+    border:2px solid brown;
+padding:34px;
+margin:105px 6px;
+border-radius:28px;
+background-color: #efdced;
+
+}
+
+#services .box img{
+    height:400px;
+margin:auto;
+display: block;
+}
+#services .box p{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* clients */
+#clients{
+    margin:34px;
+    display: flex;
+    }
+        
+    #services .box{
+        border:2px solid white;
+    padding:34px;
+    margin:105px 6px;
+    border-radius:28px;
+    background-color:black;
+    
+    }
+    
+    #services .box img{
+        height:400px;
+    margin:auto;
+    display: block;
+    }
+    #services .box p{
+        font-family: 'Open Sans', sans-serif;
+    color:white;
+    }
+    
+#clients-section{
+height:344px;
+position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url('spacebgg.jpg');
+    width:100%;
+    height:54%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 20px;
+}
+#clients img{
+    height:80px
+}
+
+/* utility class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 45px;
+    font-family: 'Open Sans', sans-serif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: rgb(83, 235, 235);
+    color:white;
+    margin:17px;
+    font-size:1.5rem;
+    cursor: pointer;
+    border-radius:23px;
+
+}
+.message {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #1a6b79;
+  }
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+  
+
+
+.center{
+    text-align: center;
+    color:red;
+} 
